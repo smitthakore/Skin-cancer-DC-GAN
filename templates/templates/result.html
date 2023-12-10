@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Prediction Result</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .intro, .bio, .learn-more {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 80px 100px;
+      color: black;
+      animation: fadeIn 1.0s ease-out;
+    }
+    .intro,.bio {
+      background-color: #fce0e6;
+    }
+
+    .intro .name-info {
+      display: flex;
+      flex-direction: column;
+
+    }
+     #ab{
+      font-family: "Lucida Console", Courier, monospace;
+      text-align: left;
+      font-size: 35px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+    #resultDisplay{
+      font-family: "Lucida Console", Courier, monospace;
+      text-align: left;
+      font-size: 35px;
+      margin-bottom: 150px;
+    }
+    .intro .name-info h1 {
+      font-family: "Lucida Console", Courier, monospace;
+      text-align: left;
+      font-size: 40px;
+      margin-top: 100px;
+      margin-bottom: 150px;
+    }
+
+.learn-more a {
+  color: #2c2c2c;
+  text-decoration: none;
+  font-weight: bold;
+  border-bottom: 3px solid #2c2c2c;
+  transition: border-color 0.5s;
+  font-family: "Lucida Console", Courier, monospace;
+  font-size: 22px;
+  padding: 0px;
+}
+.learn-more a:hover {
+  border-color: #777;
+  color:#777
+}
+
+.intro, .learn-more {
+
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+}
+
+.learn-more {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: #e7e0e0d8;
+  text-align: center;
+  padding: 20px 0px;
+  font-size: 20px;
+}
+
+.fade-in {
+  animation: fadeIn 5s ease-in-out;
+  opacity: 0;
+  transform: translateY(20px);
+  animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+  </style>
+</head>
+<body>
+    <section class="intro">
+        <div class="name-info">
+          <h1>Your Result will be displayed below:</h1>
+          <p id="ab">{{ result }}</p>
+          <p id="resultDisplay"></p>
+        </div>
+      </section>
+      
+      <section class="learn-more">
+        <a href="{{url_for('index')}}">If You Wish To Try Again With Another Image. Click Here!</a>
+      </section>
+
+
+  <script>
+
+    var result = "{{ result }}";
+
+    if (result) {
+      if (result === "Result: [0]") {
+        document.getElementById('resultDisplay').textContent = "The type of skin cancer is bcc.";
+      } else if (result === "Result: [1]") {
+        document.getElementById('resultDisplay').textContent = "The type of skin cancer is bkl.";
+      } else if (result == "Result: [2]"){
+        document.getElementById('resultDisplay').textContent = "The type of skin cancer is mel.";
+      }
+    } else {
+      document.getElementById('resultDisplay').textContent = "No result available.";
+    }
+  </script>
+</body>
+</html>

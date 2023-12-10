@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Background</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    #img{
+      padding-left: 80px;
+      text-align: center;
+      font-size: 12px;
+    }
+
+    .Links {
+      display: flex;
+      justify-content: space-around; 
+      padding: 10px 40px;
+      color: black;
+      animation: fadeIn 1.0s ease-out;
+      background-color: #fce0e6;
+    }
+
+    .Link-content {
+      font-family: math; 
+      max-width: 1000px;
+      margin-bottom: 40px;
+      padding: 40px 310px;
+      background-color: #ffffff;
+      box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      align-items: center;
+    }
+
+    .SubButton{
+      display: inline-block;
+      font-size: 12px;
+      padding: 10px 50px;
+      background-color: #070707;
+      color: #fce0e6;
+      text-decoration: underline;
+      border-radius: 10px;
+
+    }
+    .background {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 40px 80px;
+      color: black;
+      animation: fadeIn 1.0s ease-out;
+      background-color: #fce0e6;
+    }
+
+    .background-content {
+      font-family: math;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 40px 100px;
+      background-color: #ffffff;
+      box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      align-items: center;
+    }
+    .label-input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+label {
+  margin-bottom: 10px; /* Add some space between label and input */
+}
+
+    p {
+      text-align: center;
+      color: black;
+      font-size: 27px;
+      font-family: math;
+      line-height: 1.0;
+    }
+
+    h2 {
+      color: #f3a4a4;
+      margin-top: 38px;
+      margin-bottom: 10px;
+      font-family: math;
+      font-size: 24px;
+      line-height: 1.0;
+    }
+    #b{
+      color: #f3a4a4;
+      line-height: 1.0;
+      font-family: math;
+      font-size: 24px;
+    }
+
+    #a{
+      text-align: center;
+      color: black;
+      font-size: 34px;
+      font-family: math;
+      margin-bottom: 60px;
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  .Main-page {
+  background-color: #fce0e6;
+  text-align: center;
+  padding: 40px 0px;
+  font-size: 18px;
+  }
+  
+  a{
+  color: #9b9595d8;
+  text-decoration: none;
+  font-weight: bold;
+  border-bottom: 3px solid #9b9595d8;
+  transition: border-color 0.5s;
+  font-family: "Lucida Console", Courier, monospace;
+  font-size: 24px;
+  padding: 0px;
+  }
+  a:hover {
+  border-color: #00008b;
+  color:#00008b;
+  }
+
+  .Main-page a {
+  color: #777;
+  text-decoration: none;
+  font-weight: bold;
+  border-bottom: 3px solid #777;
+  transition: border-color 0.2s;
+  font-family: 'Garamond', serif; 
+  font-size: 20px;
+  }
+  .Main-page a:hover {
+  border-color: #00008b;
+  color:#00008b;
+  
+  }
+  .Main-page {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 20px 40px;
+      color: black;
+      animation: fadeIn 1.0s ease-out;
+  }
+.Main-page {
+
+background-attachment: fixed;
+background-size: cover;
+background-position: center center;
+} 
+
+.image-section .image img{
+      max-width: 100vh;
+      max-height: 80vh;
+      margin: 10px 10px;
+      border-radius: 8px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease-in-out, box-shadow 0.4s ease-in-out;
+    }
+    .image-section .image img:hover {
+      transform: scale(1.05);
+      box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+    }
+
+.image-section {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 0px 0px;
+      background-color: #f9f9f9;
+    }
+
+  </style>
+</head>
+<body>
+  <section class="background">
+    <div class="background-content">
+      <p><b>We have created a model that analyses your given image and gives you a pretty accurate description of the type of skin cancer you are suffering from.</b></p>
+      <form action="/" method="post" enctype="multipart/form-data">
+        <div class="label-input-container">
+        <label for="img"><h2>For Detecting the Type of skin cancer, Upload the sample image below:</h2></label>
+            <input class="Fbutton" type="file" id="img" name="img" required><br>
+            <input class="SubButton" type="submit" value="SUBMIT">
+            </div>
+      </form>
+    </div>
+  </section>
+
+  <section class="Links">
+    <div class="Link-content">
+    <h1 id="a"><u>More details about certain Skin Cancers</u></h1>
+    <p id="b"><b>To know more about Basal Cell Carcinoma (bcc): </b><a href="https://www.skincancer.org/skin-cancer-information/basal-cell-carcinoma/">Click Here</a></p>
+    <p id="b"><b>To know more about Benign Keratosis (bkl): </b><a href="https://www.skincancer.org/skin-cancer-information/actinic-keratosis/">Click Here</a></p>
+    <p id="b"><b>To know more about Melanoma (mel): </b><a href="https://www.skincancer.org/skin-cancer-information/melanoma/">Click Here</a></p>
+    </div>
+  </section>
+
+  <section class="image-section">
+    <div class="image">
+        <img src="/static/s1.png" alt="Image 4">
+      </div>
+    <div class="image">
+      <img src="/static/s2.jpg" alt="Image 1">
+    </div>
+    <div class="image">
+      <img src="/static/s3.jpg" alt="Image 2">
+    </div>
+    <div class="image">
+      <img src="/static/s4.jpeg" alt="Image 3">
+    </div>
+
+  </section>
+
+
+  <section class="Main-page">
+    <a href="{{url_for('index')}}">Go Back To The Home Page</a>
+  </section>
+</body>
+</html>

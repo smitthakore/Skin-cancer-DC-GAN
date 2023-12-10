@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Background</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .fButton{
+      text-align: center;
+      font-size: 40px;
+    }
+    .SubButton{
+      display: inline-block;
+      font-size: 12px;
+      padding: 10px 60px;
+      background-color: #070707;
+      color: #fce0e6;
+      text-decoration: underline;
+      border-radius: 10px;
+
+    }
+    .background {
+      display: flex;
+      /* justify-content: space-around; */
+      align-items: center;
+      padding: 20px 80px;
+      color: #f3a4a4;
+      animation: fadeIn 1.0s ease-out;
+      background-color: #fce0e6;
+    }
+    .Links {
+      display: flex;
+       justify-content: space-around; 
+      /* align-items: center; */
+      padding: 40px 40px;
+      color: black;
+      animation: fadeIn 1.0s ease-out;
+      background-color: #fce0e6;
+    }
+
+    .background-content {
+      font-family: math; 
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 10px 100px;
+      background-color: #ffffff;
+      box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      align-items: center;
+    }
+    .Link-content {
+      font-family: math; 
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 10px 100px;
+      background-color: #ffffff;
+      box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      align-items: center;
+    }
+    .label-input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+label {
+  margin-bottom: 10px; /* Add some space between label and input */
+}
+
+    h2 {
+      color: black;
+      margin-bottom: 15px;
+      font-family: math;
+    }
+
+    p {
+      font-family: "Lucida Console", Courier, monospace;
+      font-size: 1.3em;
+      line-height: 1.0;
+      margin-bottom: 15px;
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  .Main-page {
+  background-color: #fce0e6;
+  text-align: center;
+  padding: 40px 0px;
+  font-size: 18px;
+  }
+
+  .Main-page a {
+  color: #2c2c2c;
+  text-decoration: none;
+  font-weight: bold;
+  border-bottom: 3px solid #f3a4a4;
+  transition: border-color 0.2s;
+  font-family: 'Garamond', serif; 
+  }
+  .Main-page a:hover {
+  border-color: #777;
+  }
+  .Main-page {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 20px 40px;
+      color: black;
+      animation: fadeIn 1.0s ease-out;
+  }
+.Main-page {
+
+background-attachment: fixed;
+background-size: cover;
+background-position: center center;
+} 
+
+.image-section .image img{
+      max-width: 100vh;
+      max-height: 80vh;
+      margin: 10px 10px;
+      border-radius: 8px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease-in-out, box-shadow 0.4s ease-in-out;
+    }
+    .image-section .image img:hover {
+      transform: scale(1.05);
+      box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+    }
+
+.image-section {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 0px 0px;
+      background-color: #f9f9f9;
+    }
+
+  </style>
+</head>
+<body>
+  <section class="background">
+    <div class="background-content">
+      <p>We have a created a model that analyses your given image and gives you a pretty accurate description of the type of skin cancer you are suffering from.</p>
+      <form action="/" method="post" enctype="multipart/form-data">
+        <div class="label-input-container">
+        <label for="img"><h2>For Detecting the Type of skin cancer, Upload the sample image below:</h2></label>
+            <input class="Fbutton" type="file" id="img" name="img" required><br>
+            <input class="SubButton" type="submit" value="SUBMIT">
+            </div>
+      </form>
+    </div>
+  </section>
+
+<section class="Links">
+  <div class="Link-content">
+  <h2>To know in detail about certain Skin Cancers</h2>
+  <p>To know about Basal Cell Carcinoma (bcc) <a href="https://www.skincancer.org/skin-cancer-information/basal-cell-carcinoma/">Click Here</a></p>
+  <p>To know about Benign Keratosis (bkl) <a href="https://www.skincancer.org/skin-cancer-information/actinic-keratosis/">Click Here</a></p>
+  <p>To know about Melanoma (mel) <a href="https://www.skincancer.org/skin-cancer-information/melanoma/">Click Here</a></p>
+  </div>
+</section>
+  <section class="image-section">
+    <div class="image">
+        <img src="s1.png" alt="Image 4">
+      </div>
+    <div class="image">
+      <img src="s2.jpg" alt="Image 1">
+    </div>
+    <div class="image">
+      <img src="s3.jpg" alt="Image 2">
+    </div>
+    <div class="image">
+      <img src="s4.jpeg" alt="Image 3">
+    </div>
+</section>
+  
+
+  <section class="Main-page">
+    <a href="python.html">Go Back To The Home Page</a>
+  </section>
+</body>
+</html>

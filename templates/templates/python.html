@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Personal Website</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .intro, .bio, .learn-more {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 80px 100px;
+      color: black;
+      animation: fadeIn 1.0s ease-out;
+    }
+
+    .intro,.bio {
+      background-color: #fce0e6;
+    }
+
+    .intro .name-info {
+      display: flex;
+      flex-direction: column;
+
+    }
+
+    .intro .name-info h1 {
+      font-family: "Lucida Console", Courier, monospace;
+      text-align: left;
+      font-size: 45px;
+      margin-top: 10px;
+      margin-bottom: 80px;
+    }
+
+    .intro .role {
+      text-align:left ;
+      font-size: 26px;
+      font-family: math;
+      margin-top: 36px;
+      margin-bottom: 35px;
+    }
+
+    .email-button {
+      margin-top: 30px;
+      text-align:center;
+      display: inline-block;
+      padding: 10px 10px;
+      background-color: #000;
+      color: #fce0e6;
+      text-decoration: underline;
+      border-radius: 10px;
+    }
+.image-container img, .bio-image img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.bio-content, .bio-points {
+  flex: 1;
+}
+
+.bio-content{
+  margin-left: 10%;
+}
+
+.bio-points{
+  margin-left: 15%;
+}
+
+.bio-content b {
+  font-weight:200;
+  font-size: 34px;
+  margin-right:40px;
+  font-family: math;
+}
+
+.bio-points b {
+  font-weight:100;
+  font-size: 34px;
+  margin-bottom: 100px;
+  font-family: math;
+}
+
+.bio-points u, .bio-content u{
+  font-weight:100;
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-family: "Lucida Console", Bold;
+}
+
+.bio-content ol {
+  font-weight:100;
+  list-style-type: disc;
+  padding: 0px 0px;
+  font-family: "Lucida Console", Courier, monospace;
+  font-size: 26px;
+  line-height: 1.1;
+}
+
+.bio-points ol {
+  font-weight:100;
+  list-style-type: disc;
+  padding: 0px 0px;
+  font-family: "Lucida Console", Courier, monospace;
+  font-size: 26px; 
+  line-height: 1.1;
+}
+
+.learn-more a {
+  color: #2c2c2c;
+  text-decoration: none;
+  font-weight: bold;
+  border-bottom: 3px solid #f3a4a4;
+  transition: border-color 0.5s;
+  font-family: 'Garamond', serif; 
+}
+
+.learn-more a:hover {
+  border-color: #777;
+}
+
+.intro, .bio, .learn-more {
+
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+}
+
+.intro {
+  background-image: url('intro-background.jpg');
+}
+
+.bio {
+  background-image: url('bio-background.jpg');
+}
+
+.learn-more {
+  background-color: #e7e0e0d8;
+  text-align: center;
+  padding: 30px 0;
+  font-size: 19px;
+}
+
+.fade-in {
+  animation: fadeIn 5s ease-in-out;
+  opacity: 0;
+  transform: translateY(20px);
+  animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.intro .image-container img{
+      padding: 50px 50px;
+      max-width: 50vh;
+      max-height: 50vh;
+      margin-left: 120px;
+      border-radius: 8px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.4s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
+    .intro .image-container img:hover {
+      transform: scale(1.05);
+      box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+    }
+    
+  </style>
+</head>
+
+
+<body>
+
+
+  <section class="intro">
+
+
+    <div class="name-info">
+      <h1>Understanding Skin Cancer</h1>
+      <p class="role">
+        <b>Description:</b><br>Skin cancer is a common and potentially life-threatening condition that occurs when the skin's cells undergo abnormal and uncontrollable growth. It often develops due to prolonged exposure to the sun's harmful ultraviolet (UV) rays. Detecting skin cancer early is crucial for successful treatment, and this website is your essential resource for learning about the different types of skin cancer, their warning signs, and self-examination techniques to help you stay vigilant in protecting your skin's health. Knowledge is your first line of defense against skin cancer explore our comprehensive information and tools to empower yourself in the fight against this preventable disease.</p>
+      <a class="email-button" href="https://www.skincancer.org/skin-cancer-information/">Know More About Skin Cancer</a>
+    </div>
+
+
+    <div class="image-container">
+      <img src="" alt="Your Image">
+    </div>
+  </section>
+
+  <section class="bio">
+    <div class="bio-content">
+    <ol><li> Welcome to a pioneering platform at the forefront of artificial intelligence and dermatology, where cutting-edge technology meets the imperative need for improved skin cancer diagnosis. At our core, we are committed to enhancing the accuracy and accessibility of skin cancer detection, and we've achieved this through the fusion of Generative Adversarial Networks (GANs) and Convolutional Neural Networks (CNNs).
+
+Skin cancer is a growing global concern, with early detection playing a pivotal role in successful treatment and outcomes. Yet, accurate diagnosis often relies on the availability of sufficiently diverse and extensive datasets, which can be a limiting factor. This is where our innovation shines.
+
+Our system leverages the power of GANs to expand and diversify existing skin cancer image datasets. By generating realistic and diverse synthetic skin cancer images, we address the challenge of dataset scarcity, ultimately increasing the robustness and reliability of our diagnostic model. These GAN-augmented datasets serve as a crucial foundation for our Convolutional Neural Networks, enabling them to make more precise predictions.
+</li></ol>       
+</div>
+
+
+    <div class="bio-points">
+      <b><ins>How to Detect Skin Cancer</ins></b>
+      <ol>
+        <li><u>**Self-Examination**:</u><br> Regularly check your skin, especially moles and unusual spots, using mirrors for hard-to-see areas.</li>
+        <li><u>**Use the ABCDE Rule**:</u><br> Look for Asymmetry, irregular Borders, unusual Colors, a large Diameter, or Evolution in moles or spots.</li>
+        <li><u>**Consult a Professional**:</u><br> If you notice concerning changes, see a dermatologist promptly, and consider regular checkups, especially if you have risk factors.</li>
+        <li>Remember, early detection is crucial for effective treatment and better outcomes.It's always best to seek professional advice.</li>
+      </ol>
+    </div>
+
+
+</section>
+
+
+
+<section class="learn-more">
+    <a href="pythonf.html">Try Me</a>
+  </section>
+
+  <script>
+    const images = [
+      's3.jpg',
+      'skin2.jpg',
+      's2.jpg'
+    ];
+  
+    let currentImageIndex = 0;
+    const imageElement = document.querySelector('.image-container img');
+  
+    function changeImage() {
+      imageElement.src = images[currentImageIndex];
+      currentImageIndex = (currentImageIndex + 1) % images.length;
+    }
+  
+    setInterval(changeImage, 2000);
+  </script>
+</body>
+</html>
