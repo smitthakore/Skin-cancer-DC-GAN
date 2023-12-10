@@ -14,6 +14,8 @@ The Skin Lesion Synthesis with DCGAN project explores the generation of realisti
 2. **Data Collection:**
    - Data scraping techniques were utilized to gather a diverse set of skin lesion images from online sources.
    - The dataset includes various skin lesion types, providing a comprehensive training set for the DCGAN.
+   - The primary dataset used for this project is available on Kaggle: [Skin Cancer MNIST (HAM10000)](https://www.kaggle.com/datasets/kmader/skin-cancer-mnist-ham10000).
+   
 
 3. **VGG-19 for Classification:**
    - The VGG-19 model, known for its effectiveness in image classification, is employed to classify skin cancer in the generated and real images.
