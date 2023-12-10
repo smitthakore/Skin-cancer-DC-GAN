@@ -18,3 +18,13 @@ The Skin Lesion Synthesis with DCGAN project explores the generation of realisti
 3. **VGG-19 for Classification:**
    - The VGG-19 model, known for its effectiveness in image classification, is employed to classify skin cancer in the generated and real images.
    - The integration of classification enhances the utility of the project, allowing users to not only generate synthetic images but also assess their potential clinical relevance.
+     
+4. **Frontend Website:**
+   - The project includes a frontend website that runs locally using HTML and CSS.
+   - Explore the `frontend` directory to find the HTML and CSS files for the user interface.
+   - Launch the website on your local machine to interact with the generated images and classification results.
+
+5. **Backend with Flask:**
+   - The backend is powered by Flask, a lightweight web framework for Python.
+   - The Flask application handles requests from the frontend and interacts with the DCGAN and VGG-19 models to provide image synthesis and classification results.
+
